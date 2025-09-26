@@ -13,9 +13,9 @@ spring:
   ai:
     mcp:
       client:
-        request-timeout: 360s
+        request-timeout: 180s
         stdio:
-          servers-configuration: classpath:/config/mcp-servers-config.json
+          servers-configuration: classpath:/config/mcp-servers-config-3.json
     openai:
       base-url: https://apis.itedus.cn/
       api-key: sk-6xgZRvuMvgoFfHvk8902BcDcF25b49819592164f1f45219a

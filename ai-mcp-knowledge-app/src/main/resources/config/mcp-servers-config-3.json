@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mcp-server-csdn": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "/Users/xuyifeng/Developer/maven/repository/cn/bugstack/mcp/mcp-server-csdn/1.0.0/mcp-server-csdn-1.0.0.jar",
+        "--csdn.api.categories=Java场景面试宝典",
+        "--csdn.api.cookie=uuid_tt_dd=10_23663420450-1752913642638-437251; fid=20_33892484641-1752913644143-055029; UN=qq_51313170; p_uid=U010000; csdn_newcert_qq_51313170=1; FCNEC=%5B%5B%22AKsRol-3zYKdRqvB73RU4BqZJZ3K5EBz33F0yJjjNYSdOvPuxuJInjZJPbb3Kk4v1nbsuM6ZBnpCZ3Qn4fS5gUCoEHdB2_mxwJRN_6A-_fktF7jS4M6m4eNTme9LaYFwUsJ3ss7afl7riC3LaqpfTb74k3kjjsIPjw%3D%3D%22%5D%5D; __gads=ID=62dbcc80c550977e:T=1753082564:RT=1755164178:S=ALNI_MaMVhoaG4mKMRixKvE-cPfmNxXzXQ; __gpi=UID=0000116b32d667ef:T=1753082564:RT=1755164178:S=ALNI_Mbl-UmVejPr-_FhTSXirMnluglIGw; __eoi=ID=59410ad78c5fd8b1:T=1753082564:RT=1755164178:S=AA-AfjZMDGEvu4Bb2MEzE8xgiLiY; c_first_ref=cn.bing.com; c_segment=3; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1757249481,1757335347,1757646594,1758624946; HMACCOUNT=E882A1D108A94196; dc_sid=367e225af2da5a6f50d1d6d4c2bfbca2; _clck=lwedfm%5E2%5Efzn%5E0%5E2026; vip_auto_popup=1; dc_session_id=10_1758873965943.804575; _clsk=ym20oi%5E1758873967729%5E1%5E0%5En.clarity.ms%2Fcollect; c_first_page=https%3A//www.csdn.net/; c_dsid=11_1758874876380.320176; c-sidebar-collapse=0; c_ab_test=1; SESSION=d8be8f87-e8d3-415d-a454-69d074edd61b; creative_btn_mp=3; hide_login=1; loginbox_strategy=%7B%22taskId%22%3A317%2C%22abCheckTime%22%3A1758874883374%2C%22version%22%3A%22ExpA%22%2C%22nickName%22%3A%22%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8A%9D%E9%80%80%E5%B8%88_%22%7D; tfstk=gfdrH2jZw6xjIlEjNnCUuKzrmz5Rp6osYBsC-eYhPgjlOYIhxeKARWTn2Mbe0i6BFM1uLH8eXLNBTeFF-exKyMg-hULR96msfpl6yUe--yLva8qmiEQgZuDfE04UbNnsffGjErfE4ctCWUUeowIcrwbhqqrcPi23KHjlnobNW6jHxHfDoNQTEaj3tEjcDwfhxHfnuEjA86jHx602of9DreVV5T04uwfLjchFeGYl0WVaWGXuOUyQN7OVzTRHri8yzI7PUGX3yjP2_FYk6wRKSJSeRLx5kHlZ0sAy4QXVTXPANFJD4tJrYSWvnFdh3KnaBFLk4dXMZjuyYnY9B_Aov7sJKEAhcQ0QTGv6Ws7vOmFlYKvHNTCLq072aFReLgRQvZmSuBpzxJWlkZSsuqljS1UYrLPOOJedn1QVf4_7pJBlxZSsuqyLpTEluGg5P; UserName=qq_51313170; UserInfo=31dd9acad20143149e84bbf3be44f3dc; UserToken=31dd9acad20143149e84bbf3be44f3dc; UserNick=%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8A%9D%E9%80%80%E5%B8%88_; AU=336; BT=1758874997206; c_pref=https%3A//mp.csdn.net/; c_ref=https%3A//editor.csdn.net/; c_page_id=default; log_Id_pv=10; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1758875067; log_Id_view=289; log_Id_click=13; dc_tos=t36stb"
+      ]
+    }
+  }
+}
