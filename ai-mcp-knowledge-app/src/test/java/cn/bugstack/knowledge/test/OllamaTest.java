@@ -1,6 +1,5 @@
 package cn.bugstack.knowledge.test;
 
-import cn.bugstack.knowledge.test.utils.TokenTextSplitterWithContext;
 import com.alibaba.fastjson.JSON;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -34,12 +33,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
-
-/**
- * @Author: Xuyifeng
- * @Description:
- * @Date: 2025/9/25 16:53
- */
 
 @Slf4j
 @RunWith(SpringRunner.class)
@@ -119,22 +112,19 @@ public class OllamaTest {
         TikaDocumentReader reader = new TikaDocumentReader("./data/file.txt");
 
         List<Document> documents = reader.get();
-        TokenTextSplitterWithContext splitter = new TokenTextSplitterWithContext(100, 20);
-        List<Document> documentSplitterList = splitter.split(documents);
+        List<Document> documentSplitterList = tokenTextSplitter.apply(documents);
 
-        documents.forEach(doc -> doc.getMetadata().put("knowledge", "ai知识库"));
-        documentSplitterList.forEach(doc -> doc.getMetadata().put("knowledge", "ai知识库"));
+        documents.forEach(doc -> doc.getMetadata().put("knowledge", "知识库名称v3"));
+        documentSplitterList.forEach(doc -> doc.getMetadata().put("knowledge", "知识库名称v3"));
 
         pgVectorStore.accept(documentSplitterList);
 
         log.info("上传完成");
     }
 
-
-
     @Test
     public void chat() {
-        String message = "人工智能学科始于哪一年";
+        String message = "王大瓜今年几岁";
 
         String SYSTEM_PROMPT = """
                 Use the information from the DOCUMENTS section to provide accurate answers but act as if you knew this information innately.
@@ -147,7 +137,7 @@ public class OllamaTest {
         SearchRequest request = SearchRequest.builder()
                 .query(message)
                 .topK(5)
-                .filterExpression("knowledge == 'ai知识库'")
+                .filterExpression("knowledge == '知识库名称v3'")
                 .build();
 
         List<Document> documents = pgVectorStore.similaritySearch(request);
